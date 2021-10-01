@@ -636,31 +636,33 @@ img {
 
 .card-thumb {
   position: relative;
+  width: 370px;
+  height: 294px;
+
+  overflow: hidden;
 }
 
 .card-text {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   font-size: 18px;
   line-height: calc(28 / 18);
 
-  padding: 0 24px;
+  padding: 63px 24px;
 
   color: var(--white-color);
-  background-color: rgba(33, 150, 243, 0.9);
-
-  opacity: 0;
 }
 
-.products .item:hover .card-text {
-  opacity: 1;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translatey(100%);
+  transition: transform 250ms ease;
+}
+
+.products .item:hover .overlay {
+  transform: translatey(0);
 }
