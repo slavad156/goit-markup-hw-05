@@ -595,6 +595,12 @@ img {
 }
 
 /* Products */
+.card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
 .products {
   display: flex;
   flex-wrap: wrap;
@@ -629,7 +635,8 @@ img {
   border-top: 1px solid transparent;
 }
 
-.products .item:hover {
+.card-link:hover,
+.card-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -660,7 +667,8 @@ img {
   transition: transform 250ms ease;
 }
 
-.products .item:hover .overlay {
+.card-link:hover .overlay,
+.card-link:focus .overlay {
   transform: translatey(0);
 }
 
