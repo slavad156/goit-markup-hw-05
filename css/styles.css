@@ -719,6 +719,7 @@ img {
 }
 
 .close {
+  display: block;
   fill: #000000;
 }
 
