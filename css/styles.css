@@ -701,3 +701,29 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+
+.close-modal {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: var(--white-color);
+}
+
+.close {
+  display: block;
+  fill: #000000;
+}
+
+.close-modal:hover .close,
+.close-modal:focus .close {
+  fill: var(--accent);
+}
