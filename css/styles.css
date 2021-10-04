@@ -714,11 +714,13 @@ img {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
 }
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(-0.7);
   opacity: 0;
+  visibility: hidden;
 }
 
 .modal {
@@ -728,7 +730,8 @@ img {
 
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
-  transition: transform 250ms var(--time-animation), opacity 250ms var(--time-animation);
+  transition: transform 250ms var(--time-animation), opacity 250ms var(--time-animation),
+    visibility 250ms var(--time-animation);
 
   min-width: 528px;
   min-height: 581px;
