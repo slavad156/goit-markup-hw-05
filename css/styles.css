@@ -126,6 +126,8 @@ img {
 
   background: var(--accent);
   border-radius: 2px;
+
+  animation: current 400ms var(--time-animation);
 }
 
 .site-nav {
@@ -768,4 +770,13 @@ img {
 .close-modal:hover .close,
 .close-modal:focus .close {
   fill: var(--accent);
+}
+
+@keyframes current {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
